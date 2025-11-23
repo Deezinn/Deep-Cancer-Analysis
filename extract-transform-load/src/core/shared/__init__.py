@@ -1,1 +1,1 @@
-from .constants import URL_API_BRAIN_TUMOR
+from .constants import URL_API_BRAIN_TUMOR, URL_API_DEATH_RATE

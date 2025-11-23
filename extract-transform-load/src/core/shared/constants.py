@@ -1,1 +1,2 @@
 URL_API_BRAIN_TUMOR = "shuvokumarbasakbd/brain-tumor-mri-detection-colorized"
+URL_API_DEATH_RATE = "https://ourworldindata.org/grapher/brain-and-nervous-system-cancer-death-rate.csv?v=1&csvType=filtered&useColumnShortNames=false&overlay=download-data"

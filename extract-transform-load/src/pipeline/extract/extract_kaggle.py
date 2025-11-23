@@ -3,8 +3,7 @@ from src.core.shared import URL_API_BRAIN_TUMOR
 
 import kagglehub
 
-
-class Extract(ExtractInterface):
+class ExtractKaggle(ExtractInterface):
     def __init__(self, api_url):
         self.__api_url = api_url
     
