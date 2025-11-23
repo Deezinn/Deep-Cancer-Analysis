@@ -1,0 +1,1 @@
+URL_API_BRAIN_TUMOR = "shuvokumarbasakbd/brain-tumor-mri-detection-colorized"

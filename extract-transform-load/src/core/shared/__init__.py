@@ -1,0 +1,1 @@
+from .constants import URL_API_BRAIN_TUMOR
