@@ -1,18 +1,18 @@
 from abc import ABC, abstractmethod
 
 class ExtractInterface(ABC):
-    """
-    Classe que servirá como contrato de extração das imagens e dataset sobre cancêr cerebral
-    """
-    
+
     @classmethod
     @abstractmethod
-    def load_api_url(self):
-        """ 
-        Método padrão onde a classe vai usar para extrair os dados
+    def load_api_url(cls):
+        """
+        Método que retorna a URL da API
         """
         pass
-    
+
     @abstractmethod
     def fetch_data(self):
+        """
+        Método para buscar dados
+        """
         pass

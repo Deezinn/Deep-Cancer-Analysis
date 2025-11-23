@@ -30,9 +30,8 @@ class ExtractWorldData(ExtractInterface):
         try:
             r = requests.get(self.__api_url)
             if r.status_code == 200:
-                print(r.text)
-                return StringIO(r.text)
+                return r.text
         except Exception as e:
             print(f"Erro ao extrair os dados {e}")
-        
+            return None
         
