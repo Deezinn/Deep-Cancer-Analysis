@@ -1,2 +1,2 @@
-from .extract_deth_rate import ExtractWorldData
+from .extract_death_rate import ExtractWorldData
 from .extract_kaggle import ExtractKaggle
