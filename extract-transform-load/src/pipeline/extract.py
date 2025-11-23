@@ -20,6 +20,3 @@ class Extract(ExtractInterface):
                 print(f"Os arquivos foram baixados no caminho: {path}")
        except Exception:
            pass
-
-a = Extract()
-a.load_data()
