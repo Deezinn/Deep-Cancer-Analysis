@@ -19,7 +19,7 @@ class TransformWorldData:
         
     def _rename_column(self):
         nova_traducao = {}
-        valores_traduzidos = ['entidade', 'codigo', 'ano', 'taxa mortalidade', 'ano_referencia']
+        valores_traduzidos = ['entidade', 'codigo', 'ano', 'taxa_mortalidade', 'ano_referencia']
         
         for novo_nome, coluna_original in zip(valores_traduzidos, self.__dataframe.columns):
             nova_traducao[coluna_original] = novo_nome.lower()
