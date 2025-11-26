@@ -26,7 +26,7 @@ class TransformWorldData:
             
         self.__dataframe = self.__dataframe.rename(columns=nova_traducao)
         
-        # Deletando a coluna ano, pois, ela se baseia no ano de referencia
+        # Deletando a coluna ano, pois, ela já se baseia no ano de referencia
         
         if 'ano' in self.__dataframe.columns:
             del self.__dataframe['ano']
@@ -51,6 +51,7 @@ class TransformWorldData:
                 self.__dataframe[coluna] = self.__dataframe[coluna].fillna('Não informado')
                 self.__dataframe[coluna] = self.__dataframe[coluna].replace('nan', 'Não informado')
             
+            # temporario
         self.__dataframe.to_csv('../data/dataset-casos-cancer-process-pipeline.csv')
                     
                     

@@ -2,16 +2,19 @@ import { Icon } from "@iconify/react";
 
 export const Navbar = () => {
     return (
-        <div className="w-full h-20 grid grid-cols-2">
-            <div className="w-full h-full flex justify-start items-center">
-                <Icon icon="svg-spinners:gooey-balls-1" width={30} height={30}/>
-            </div>
-            <div className="w-full h-full flex justify-end items-center">
-                <div className="w-1/7 h-auto flex flex-row gap-5 justify-end items-center bg-gray-500 px-2 py-1 rounded-full text-white">
-                    <h1>Equipe</h1>
-                    <Icon icon="material-symbols:account-circle" width={30} height={30} />
+        <div className="w-full h-auto flex justify-center items-center fixed top-0 left-0 z-50 p-10 text-blue-500 ">
+            <nav className="w-4/5 h-15 bg-white rounded-full flex items-center justify-between px-5 shadow-2xl">
+                <div className="w-full h-auto flex flex-row justify-start items-center gap-5">
+                    <Icon icon="icon-park-twotone:brain" width={30} height={30} />
+                    <h1>Medica<span className="font-bold">AI</span></h1>
                 </div>
-            </div>
+                <div className="w-full h-10 flex flex-row justify-end items-center">
+                    <div className="w-auto p-2 flex flex-row justify-end items-center gap-5">
+                        <h1>Equipe</h1>
+                        <Icon icon="zondicons:user-group" width={20} height={20} />
+                    </div>
+                </div>
+            </nav>
         </div>
     );
 };

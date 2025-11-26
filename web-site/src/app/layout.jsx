@@ -24,11 +24,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased px-10`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
         <Loader/>
         {children}
+        <Navbar />
       </body>
     </html>
   );
