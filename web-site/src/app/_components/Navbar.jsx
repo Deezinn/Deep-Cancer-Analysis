@@ -15,7 +15,7 @@ export const Navbar = () => {
                     </div>
                     {/* Equipe */}
                     <div className="w-full h-10 flex flex-row justify-end items-center">
-                        <div className="w-30 p-2 flex flex-row justify-end items-center gap-5 rounded-xl bg-gray-100 ">
+                        <div className="w-auto p-2 flex flex-row justify-end items-center gap-5 rounded-xl bg-gray-100 cursor-pointer">
                             <h1>Equipe</h1>
                             <Icon icon="zondicons:user-group" width={20} height={20} />
                         </div>
