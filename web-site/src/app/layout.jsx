@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Brain Deep Analtsis",
+  title: "Brain Deep Analysis",
   description: "",
 };
 

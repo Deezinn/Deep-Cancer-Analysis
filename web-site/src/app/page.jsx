@@ -27,8 +27,14 @@ export default function Home() {
           {/* Aplicar mapp depois, usar o diretorio constant/helps */}
           {helpsCards.map((value, idx) => {
             return (
-              <div className="w-full h-15 hover:shadow-2xl rounded-xl flex items-center px-2" key={idx}>
-                <h1>{value.label}</h1>
+              <div className="w-full h-15 hover:shadow-2xl rounded-xl flex justify-between gap-2 items-center px-2 " key={idx}>
+                <div className="flex flex-row justify-center items-center gap-2">
+                  {value.icon}
+                  <h1>{value.label}</h1>
+                </div>
+                <div className="flex flex-row justify-center items-center">
+                  {value.arrow}
+                </div>
               </div>
             )
           })}
