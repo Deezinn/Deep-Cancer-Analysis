@@ -4,9 +4,10 @@ from utils import transform_to_base64
 
 def analisar_diagnostico(text: str, imagem: bytes = None):
 
-    content = content=[
+    content=[
             {"type": "text", "text": text},
         ]
+    
     if imagem:
         content.append({
             "type": "image_url",
