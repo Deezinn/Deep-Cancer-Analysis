@@ -1,13 +1,13 @@
 # LLM / LangChain
-langchain==0.3.0
-langchain-google-genai==2.0.0
-python-dotenv==1.0.1
+langchain
+langchain-google-genai
+python-dotenv
 
 # Deep Learning
 tensorflow
-pillow==10.4.0
+pillow
 
 # API backend
-fastapi==0.115.0
-uvicorn[standard]==0.30.6
-python-multipart==0.0.9
+fastapi
+uvicorn[standard]
+python-multipart
