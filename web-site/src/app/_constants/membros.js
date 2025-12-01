@@ -1,10 +1,10 @@
 export const membros = [
-        {
-            name: "André Luiz",
-            image: ""
-        },
-        {
-            name: "Rafael Moura",
-            image: ""
-        }
-    ];
+    {
+        name: "André Luiz",
+        image: "/equipe/AndreLuiz.jpg"
+    },
+    {
+        name: "Rafael Moura",
+        image: "/equipe/RafaelMoura.jpeg"
+    }
+];
