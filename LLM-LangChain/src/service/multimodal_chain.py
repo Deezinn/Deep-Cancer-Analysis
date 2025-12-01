@@ -1,17 +1,21 @@
+from langchain.messages import HumanMessage, AIMessage, SystemMessage
 
-from langchain.messages import HumanMessage
 from utils import transform_to_base64
+from .prompt import SYSTEM_PROMPT
 
 def analisar_diagnostico(text: str, imagem: bytes = None):
 
-    content=[
-            {"type": "text", "text": text},
-        ]
-    
-    if imagem:
-        content.append({
-            "type": "image_url",
-            "image_url": transform_to_base64(imagem)
-        })
+    messages = [
+        SystemMessage(content=SYSTEM_PROMPT),
+        HumanMessage(content=text)
+    ]
 
-    return HumanMessage(content=content)
+    if imagem:
+        messages.append(
+            HumanMessage(content={
+                "type": "image_url",
+                "image_url": {"url": transform_to_base64(imagem)}
+            })
+        )
+
+    return messages

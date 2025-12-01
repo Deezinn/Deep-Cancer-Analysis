@@ -2,7 +2,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 
 MODELO = ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
-    temperature=0,
+    temperature=0.7,
     max_tokens=None,
     timeout=None,
     max_retries=2,
