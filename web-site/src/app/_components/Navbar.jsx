@@ -7,7 +7,7 @@ export const Navbar = () => {
     return (
         <>
             <div className="w-full h-auto flex justify-center items-center fixed top-0 left-0 z-50 p-10 text-blue-500">
-                <nav className="w-4/5 h-15 bg-white rounded-full flex items-center justify-between px-5 shadow-2xl">
+                <nav className="w-full md:w-4/5 h-15 bg-white rounded-full flex items-center justify-between px-5 shadow-2xl">
                     {/* Logo */}
                     <div className="w-full flex flex-row justify-start items-center gap-5">
                         <Icon icon="icon-park-twotone:brain" width={30} height={30} />

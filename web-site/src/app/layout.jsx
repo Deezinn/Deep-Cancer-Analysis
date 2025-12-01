@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Brain Deep Analysis",
-  description: "",
+  description: "Converse com nossa IA e tenha ajuda nos seus diagnósticos.",
 };
 
 export default function RootLayout({ children }) {
