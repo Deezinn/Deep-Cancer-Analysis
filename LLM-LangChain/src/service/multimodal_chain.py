@@ -1,7 +1,7 @@
-from langchain.messages import HumanMessage, AIMessage, SystemMessage
-
-from utils import transform_to_base64
 from .prompt import SYSTEM_PROMPT
+
+from langchain.messages import HumanMessage, AIMessage, SystemMessage
+from utils import transform_to_base64
 
 def analisar_diagnostico(text: str, imagem: bytes = None):
 

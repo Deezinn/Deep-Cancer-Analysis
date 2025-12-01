@@ -7,7 +7,7 @@ export default function Home() {
     <div className="flex min-h-screen items-center justify-center font-sans bg-blue-50">
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-center gap-5">
         <section className="w-full flex flex-col justify-center items-center gap-10">
-          <h1 className="text-5xl text-start">Tire suas <span className="font-bold">dúvidas</span> com nosso especialista médico</h1>
+          <h1 className="text-5xl text-start">Entenda seus <span className="text-blue-500">exames</span> com ajuda da nossa <span className="font-bold">IA.</span></h1>
           <div className="w-full h-50 flex flex-col justify-between bg-white rounded-3xl shadow-2xl px-5">
             <input
               type="text"
@@ -27,7 +27,7 @@ export default function Home() {
           {/* Aplicar mapp depois, usar o diretorio constant/helps */}
           {helpsCards.map((value, idx) => {
             return (
-              <div className="w-full h-15 hover:shadow-2xl rounded-xl flex justify-between gap-2 items-center px-2 " key={idx}>
+              <div className="w-full h-15 hover:shadow-2xl rounded-xl flex justify-between gap-2 items-center px-2 text-gray-500" key={idx}>
                 <div className="flex flex-row justify-center items-center gap-2">
                   {value.icon}
                   <h1>{value.label}</h1>
