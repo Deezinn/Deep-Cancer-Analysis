@@ -2,9 +2,9 @@
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 import { membros } from "../_constants/membros";
+
 export const Navbar = () => {
     const [showTeam, setShowTeam] = useState(false);
-
 
     return (
         <div className="w-full h-auto flex justify-center items-center fixed top-0 left-0 z-50 p-10 text-blue-500">

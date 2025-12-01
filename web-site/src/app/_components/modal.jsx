@@ -1,13 +1,7 @@
 'use client';
 import React from "react";
 import Image from "next/image";
-
-
-const ultrasoundImages = [
-    "/Y1_10.jpg",
-    "/Y2_10.jpg",
-    "/Y21_10.jpg"
-];
+import { ultrasoundImages } from "../_constants/ultra_images";
 
 export const Modal = ({ context, onClose }) => {
 
