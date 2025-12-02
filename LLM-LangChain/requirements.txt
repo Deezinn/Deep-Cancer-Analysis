@@ -1,4 +1,13 @@
-langchain-google-genai
+# LLM / LangChain
 langchain
-dotenv
-pandas
+langchain-google-genai
+python-dotenv
+
+# Deep Learning
+tensorflow
+pillow
+
+# API backend
+fastapi
+uvicorn[standard]
+python-multipart
