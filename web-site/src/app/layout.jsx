@@ -2,8 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 
 
 import "./globals.css";
-import { Navbar } from "./_components/Navbar";
-import Loader from "./_components/Loader";
+import { Navbar } from "./_components/navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Brain Deep Analysis",
-  description: "",
+  description: "Converse com nossa IA e tenha ajuda nos seus diagnósticos.",
 };
 
 export default function RootLayout({ children }) {
@@ -26,7 +25,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Loader/>
         {children}
         <Navbar />
       </body>
