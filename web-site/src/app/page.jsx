@@ -40,7 +40,7 @@ export default function Home() {
 
       setMessages((prev) => [
         ...prev,
-        { role: "assistant", content: <IAResponse data={response} /> },
+        { role: "assistant", content: <IAResponse data={response} image={file}/> },
       ]);
 
       setValue("");
