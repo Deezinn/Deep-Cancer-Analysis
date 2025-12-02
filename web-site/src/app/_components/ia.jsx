@@ -1,4 +1,4 @@
-export const IAResponse = ({ data }) => {
+export const IAResponse = ({ data, image }) => {
     return (
         <div className="w-full bg-white p-6 rounded-2xl shadow-lg flex flex-col gap-6 mt-4">
 
@@ -9,7 +9,7 @@ export const IAResponse = ({ data }) => {
             </div>
 
             {/* Probabilidades */}
-            <div className="bg-blue-50 p-4 rounded-xl shadow-inner">
+            {image && (<div className="bg-blue-50 p-4 rounded-xl shadow-inner">
                 <h3 className="font-semibold text-lg mb-2">Probabilidade de Tumor</h3>
                 <p><strong>Score:</strong> {data.probabilidade_tumor?.toFixed(5)}</p>
                 <p><strong>Percentual:</strong> {data.probabilidade_tumor_percent ?? "N/A"}%</p>
@@ -26,7 +26,7 @@ export const IAResponse = ({ data }) => {
                         <span className="text-gray-500 font-semibold">Indefinido</span>
                     )}
                 </p>
-            </div>
+            </div>)}
 
             {/* Relatório LLM */}
             <div className="bg-gray-50 p-4 rounded-xl whitespace-pre-wrap leading-relaxed text-gray-700">
