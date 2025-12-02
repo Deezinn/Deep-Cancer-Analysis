@@ -27,8 +27,10 @@ class ExtractKaggle(ExtractInterface):
     def fetch_data(self):
         try:
             path = kagglehub.dataset_download(self.__api_url)
-            print(f"O conteúdo do dataset foi baixado com sucesso, caminho {path}")
+            # print(f"O conteúdo do dataset foi baixado com sucesso, caminho {path}")
+            return path
         except Exception as e:
             print(f"Erro ao extrair os dados {e}")
+            return None
         
         

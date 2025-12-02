@@ -15,7 +15,7 @@ class TransformWorldData:
         self._rename_column()
         self._set_types()
         self._sanitize_str_columns()
-        return self
+        return self.__dataframe
         
     def _rename_column(self):
         nova_traducao = {}
@@ -51,9 +51,6 @@ class TransformWorldData:
                 self.__dataframe[coluna] = self.__dataframe[coluna].fillna('Não informado')
                 self.__dataframe[coluna] = self.__dataframe[coluna].replace('nan', 'Não informado')
             
-            # temporario
-        self.__dataframe.to_csv('../data/dataset-casos-cancer-process-pipeline.csv')
-                    
                     
         
 
